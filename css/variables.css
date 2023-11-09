@@ -1,0 +1,13 @@
+:root {
+	--font-size-base: 16px;
+
+	--color-primary: black;
+	--color-secondary: white;
+	--color-tertiary: hsl(0, 0%, 65%);
+
+	--color-accent-1: hsl(235, 100%, 90%);
+
+	--spacing-small: 0.5rem;
+	--spacing-medium: 1rem;
+	--spacing-large: 2rem;
+}
