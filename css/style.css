@@ -11,8 +11,7 @@ body {
 	gap: var(--spacing-large);
 	width: 100vw;
 	height: 100vh;
-	background-image: url('../assets/images/pymlico-background-image.jpg');
-	background-color: black;
+	background-color: white;
 }
 
 .main_container {
@@ -30,10 +29,3 @@ body {
 	margin-top: 1rem;
 }
 
-aside {
-	position: sticky;
-	top: 1rem;
-	background-color: rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(2px);
-	border-radius: 5px;
-}
