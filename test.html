@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		
+	</head>
+	<body>
+
+		<div class="header__carousel">
+			<img class="header__carousel--image" src="./assets/images/Header-hjemmeside-1.jpeg" alt="Image 1">
+			<img class="header__carousel--image" src="./assets/images/pymlico-live-france-2022.jpeg" alt="Image 2">
+			<img class="header__carousel--image" src="./assets/images/concert_lidkoping.jpeg" alt="Image 3">
+		</div>
+		<script>
+			let slideIndex = 0;
+				showSlides();
+				function showSlides() {
+				let i;
+				let slides = document.querySelectorAll(".header__carousel--image");
+				for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+				}
+			slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}
+			slides[slideIndex-1].style.display = "block";
+				setTimeout(showSlides, 3000);
+			}
+		</script>
+	</body>
+</html>

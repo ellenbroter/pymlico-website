@@ -14,38 +14,74 @@
 	<body>
 		<section class="page-hero">
 			<div class="grid">
-				<div class="column--4">
-					<ul class="links-left">
-						<li>HOME</li>
-						<li>ABOUT</li>
-						<li>CONCERTS</li>
-						<li>DISCOGRAPHY</li>
-						<li>VIDEOS</li>
-					</ul>
-				</div>
-
-				<div class="column--4 header_title">
+				<div class="column--12 header">
 					<h1>PYMLICO</h1>
-				</div>
-
-				<div class="column--4 header_shop">
-					<ul class="links-right">
-						<li>SHOP</li>
-						<li><img src="assets/images/icons/shopping-cart.svg"2 alt=""></li>
+					<ul class="header__links">
+						<li><button data-component="home" class="overview__button overview__button--active">HOME</button></li>
+						<li><button data-component="about" class="overview__button overview__button--active">ABOUT</button></li>
+						<li><button data-component="concerts" class="overview__button overview__button--active">CONCERTS</button></li>
+						<li><button data-component="discography" class="overview__button overview__button--active">DISCOGRAPHY</button></li>
+						<li><button data-component="videos" class="overview__button overview__button--active">VIDEOS</button></li>
 					</ul>
 				</div>
 			</div>
 		</section>
 		
-		<div class="main_container">
-			
-			<aside>
-				
-			</aside>
-			<main>
-				
-			</main>
-		</div>
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--12">
+					<div class="header__image">
+						<img src="./assets/images/Header-hjemmeside-1.jpeg">
+					</div>
+
+					<div class="header__icons">
+						<img src="./assets/images/icons/white/facebook-logo.svg">
+						<img src="./assets/images/icons/white/instagram-logo.svg">
+						<img src="./assets/images/icons/white/youtube-logo.svg">
+						<img src="./assets/images/icons/white/spotify-logo.svg">
+						<img src="./assets/images/icons/white/soundcloud-logo.svg">
+						<img src="./assets/images/icons/white/envelope.svg">
+					</div>
+				</div>
+			</div>
+		</section>
+
+			<div class="component component--visible" data-name="about">
+				<div class="component-state">
+					<div class="component-state__name">
+						Normal
+					</div>
+
+					<div class="component-state__variant">
+						Accordion normal
+					</div>
+				</div>
+			</div>
+
+			<div class="component" data-name="concerts">
+				<div class="component-state">
+					<div class="component-state__name">
+						Normal
+					</div>
+
+					<div class="component-state__variant">
+						Breadcrumbs normal
+					</div>
+				</div>
+			</div>
+
+			<div class="component" data-name="discography">
+				<div class="component-state">
+					<div class="component-state__name">
+						Normal
+					</div>
+
+					<div class="component-state__variant">
+						Breadcrumbs normal
+					</div>
+				</div>
+			</div>
+		</main>
 
 		<script src="./js/script.js"></script>
 	</body>

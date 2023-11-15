@@ -3,13 +3,87 @@ html {
 }
 
 body {
-	font-family: 'Inter', 'Arial', sans-serif;
-	padding: var(--spacing-medium);
-	gap: var(--spacing-large);
+	font-family: 'Josefin Sans', sans-serif;
 	width: 100vw;
 	height: 100vh;
-	background-color: white;
-	color: darkslategrey;
+	background-image: url(../assets/images/background-pymlico.png);
+	background-size: cover;
+	color: black;
+}
+
+.overview__button {
+	color: black;
+}
+
+.overview__button:hover {
+	color: white;
+}
+
+.component {
+	display: none;
+	flex-flow: column nowrap;
+	gap: var(--spacing-large);
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component-state {
+	display: flex;
+	width: 100%;
+	flex-flow: column nowrap;
+	gap: var(--spacing-small);
+}
+
+.component-state__name {
+	color: var(--color-tertiary);
+}
+
+.header {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	font-size: 96px;
+	letter-spacing: .1rem;
+}
+
+.header__links {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: .2rem;
+}
+
+.header__links:hover {
+	color: grey;
+}
+
+.header__image {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.header__icons {
+	margin-top: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.header__icons img {
+	width: 24px;
+	height: 24px;
 }
 
 .main_container {
@@ -17,40 +91,4 @@ body {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-}
-
-.links-left {
-	display: flex;
-	flex-flow: row wrap;
-	gap: 1rem;
-	margin-top: 1rem;
-	font-size: 12px;
-	font-family: 'Antonio', sans-serif;
-}
-
-.links-right {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: end;
-	gap: 1rem;
-	margin-top: 1rem;
-	font-size: 12px;
-	font-family: 'Antonio', sans-serif;
-}
-
-h1 {
-	font-family: 'Antonio', sans-serif;
-}
-
-.links-right img {
-	height: 16px;
-	width: 16px;
-}
-
-.header_title {
-	text-align: center;
-}
-
-.header_shop {
-	text-align: end;
 }

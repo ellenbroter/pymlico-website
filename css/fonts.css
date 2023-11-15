@@ -1,1 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@font-face {
+	font-family: 'Dense';
+	src: url('../assets/fonts/Dense-Regular.otf');
+	font-weight: 400;
+	font-style: normal;
+}
