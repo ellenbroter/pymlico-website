@@ -72,6 +72,7 @@ h3 {
 	font-weight: 200;
 	font-size: 24px;
 	letter-spacing: .1rem;
+	text-align: center;
 }
 
 .undertitle_dense {
@@ -113,12 +114,6 @@ h3 {
 	width: 24px;
 	height: 24px;
 	cursor: pointer;
-	transition: all 0.05s 0.05s;
-}
-
-.header__icons img:hover {
-	background-color: white;
-	border-radius: 50%;
 }
 
 .main_container {
@@ -166,12 +161,12 @@ transition: color 0.05s 0.05s;
 
 .left {
 	margin-left: -20rem;
-	z-index: 5;
+	z-index: 10;
 }
 
 .right {
 	margin-right: -3rem;
-	z-index: 10;
+	z-index: 5;
 }
 
 footer {
