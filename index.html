@@ -11,15 +11,15 @@
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/grid.css">
 	</head>
-	<body>
+	<body id="home">
 		<section class="page-hero">
 			<div class="grid">
 				<div class="column--12 header">
 					<h1>PYMLICO</h1>
 					<ul class="header__links">
-						<li><button data-component="home" class="overview__button overview__button--active">HOME</button></li>
-						<li><button data-component="about" class="overview__button overview__button--active">ABOUT</button></li>
-						<li><button data-component="concerts" class="overview__button overview__button--active">CONCERTS</button></li>
+						<li><a href="#home"><button data-component="home" class="overview__button overview__button--active">HOME</button></a></li>
+						<li><a href="#about"><button data-component="about" class="overview__button overview__button--active">ABOUT</button></a></li>
+						<li><a href="#concerts"><button data-component="concerts" class="overview__button overview__button--active">CONCERTS</button></a></li>
 						<li><button data-component="discography" class="overview__button overview__button--active">DISCOGRAPHY</button></li>
 						<li><button data-component="videos" class="overview__button overview__button--active">VIDEOS</button></li>
 					</ul>
@@ -29,24 +29,130 @@
 		
 		<section class="page-section">
 			<div class="grid">
-				<div class="column--12">
-					<div class="header__image">
-						<img src="./assets/images/Header-hjemmeside-1.jpeg">
-					</div>
+				<div class="column--12 main_container">
+					<img class="header__image" src="./assets/images/Header-hjemmeside-1.jpeg">
+				</div>
+			</div>
+		</section>
 
-					<div class="header__icons">
-						<img src="./assets/images/icons/white/facebook-logo.svg">
-						<img src="./assets/images/icons/white/instagram-logo.svg">
-						<img src="./assets/images/icons/white/youtube-logo.svg">
-						<img src="./assets/images/icons/white/spotify-logo.svg">
-						<img src="./assets/images/icons/white/soundcloud-logo.svg">
-						<img src="./assets/images/icons/white/envelope.svg">
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--12 header__icons">
+						<img src="./assets/images/icons/black/facebook-logo.svg">
+						<img src="./assets/images/icons/black/instagram-logo.svg">
+						<img src="./assets/images/icons/black/youtube-logo.svg">
+						<img src="./assets/images/icons/black/spotify-logo.svg">
+						<img src="./assets/images/icons/black/soundcloud-logo.svg">
+						<img src="./assets/images/icons/black/envelope.svg">
 					</div>
 				</div>
 			</div>
 		</section>
 
-			<div class="component component--visible" data-name="about">
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--12 main_container">
+					<h2>NEW ALBUM • SUPERMASSIVE • OUT NOW</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--6 main_container">
+					<img class="album-cover" src="./assets/images/album-covers/Pymlico-Supermassive-Cover-3600-800x800.jpeg">
+				</div>
+				<div class="column--6 main_container">
+					<div class="white-square left">
+						<h3>SUPERMASSIVE</h3>
+						<p class="undertitle_dense">VINYL • CD • STREAMING</p>
+						<p>The seventh album by Pymlico, "Supermassive," is out! 🎉</p>
+						<p>Order it here and get it delivered directly from us to you.</p>
+						<button class="button__blue">GET YOUR VINYL HERE</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--12 main_container">
+					<h2>NEW VIDEO • SECOND RATE PUNK • LIVE IN STUDIO</h2>
+				</div>
+				<div class="column--12 main_container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/I-QUJCiSP24?si=bckkLUZJbFPEzYQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				<div class="column--12 main_container">
+					<button class="button__blue">MORE VIDEOS</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section" id="concerts">
+			<div class="grid">
+				<div class="column--12 main_container">
+					<h2>CONCERTS</h2>
+					<p>No planned concerts at the moment</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section" id="concerts">
+			<div class="grid">
+				<div class="column--12 main_container">
+					SLIDESHOW
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--12 main_container">
+					<h2>CONCERT HISTORY</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--3 main_container">
+					<p>Drop down menu</p>
+				</div>
+
+				<div class="column--9 main_container">
+					<div>Tabell her med konserter</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section" id="about">
+			<div class="grid">
+				<div class="column--12 main_container">
+					<h2>ABOUT</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="grid">
+				<div class="column--6 main_container">
+					<div class="white-square right">
+						Pymlico is an instrumental band from Oslo, Norway, led by composer and drummer Arild Brøter. The band mainly plays what has been described as a mix between progressive rock and fusion.  However, their music also offers catchy hooks and singable melodies associated with pop music, alongside  grandiose themes more in the vein of movie sound tracks. This combination of genres and a high level of  musicianship gives the band it's distinctive sound.
+						<p class="undertitle_dense">Øyvind Brøter • Stephan Hvinden • Andreas Sjo Engen</p>
+							<p class="undertitle_dense">Are Nerland • Robin Havem Løvøy • Arild Brøter • Oda Rydning</p>
+						<button class="button__blue">READ MORE ABOUT US</button>
+					</div>
+					
+				</div>
+
+				<div class="column--6 main_container">
+					<img src="./assets/images/Pymlico-Anne-Marie-Forker-www.forkerfotos.com-0-BW-2048x1280.jpg">
+				</div>
+			</div>
+		</section>
+
+		
+			<div class="component" data-name="about">
 				<div class="component-state">
 					<div class="component-state__name">
 						Normal
@@ -82,6 +188,19 @@
 				</div>
 			</div>
 		</main>
+
+		<footer>
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						Apollon records
+					</div>
+					<div class="column--12 main_container">
+						<button class="button__blue button-top">TO THE TOP</button>
+					</div>
+				</div>
+			</section>
+		</footer>
 
 		<script src="./js/script.js"></script>
 	</body>
