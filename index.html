@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="./css/fonts.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/grid.css">
+		<link rel="stylesheet" href="./css/slideshow.css">
+		<link rel="stylesheet" href="./css/concert-history.css">
 	</head>
 	<body id="home">
 		<section class="page-hero">
@@ -22,6 +24,7 @@
 						<li><a href="#concerts"><button data-component="concerts" class="overview__button overview__button--active">CONCERTS</button></a></li>
 						<li><button data-component="discography" class="overview__button overview__button--active">DISCOGRAPHY</button></li>
 						<li><button data-component="videos" class="overview__button overview__button--active">VIDEOS</button></li>
+						<li><button data-component="shop" class="overview__button overview__button--active">SHOP</button></li>
 					</ul>
 				</div>
 			</div>
@@ -100,7 +103,25 @@
 		<section class="page-section" id="concerts">
 			<div class="grid">
 				<div class="column--12 main_container">
-					SLIDESHOW
+					<div class="slideshow-container">
+						<h3>PYMLICO • FRENCH GUIANA • 10/20/23</h3>
+						<div class="slides">
+						  <img src="./assets/images/french-guiana-slideshow/01.jpeg" alt="Image 1">
+						  <img src="./assets/images/french-guiana-slideshow/02.jpeg" alt="Image 2">
+						  <img src="./assets/images/french-guiana-slideshow/03.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/04.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/05.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/06.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/07.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/08.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/09.jpeg" alt="Image 3">
+						  <img src="./assets/images/french-guiana-slideshow/10.jpeg" alt="Image 3">
+						</div>
+						<p class="slideshow-credit_dense">Credit <a href="https://www.facebook.com/lifetimephotographie">Lifetime Photographie - Guillaume BRET</a></>
+					 
+						<a class="prev" onclick="previousSlide()"><img src="./assets/images/icons/white/caret-left-white.svg"></a>
+						<a class="next" onclick="nextSlide()"><img src="./assets/images/icons/white/caret-right-white.svg"></a>
+					 </div>
 				</div>
 			</div>
 		</section>
@@ -115,12 +136,52 @@
 
 		<section class="page-section">
 			<div class="grid">
-				<div class="column--3 main_container">
-					<p>Drop down menu</p>
+				<div class="column--12 filter-buttons">
+					<button class="filter-button" data-filter-by="*">All locations</button>
+					<button class="filter-button" data-filter-by="oslo">Norway, Oslo</button>
+					<button class="filter-button" data-filter-by="norway">Norway</button>
+					<button class="filter-button" data-filter-by="sweden">Sweden</button>
+					<button class="filter-button" data-filter-by="france">France</button>
+					<button class="filter-button" data-filter-by="french-guiana">French Guiana</button>
 				</div>
-
-				<div class="column--9 main_container">
-					<div>Tabell her med konserter</div>
+		
+				<div class="column--12 main_container">
+					<div class="list-items">
+						<div class="list-item" data-type="french-guiana">20.10.23 • Festival Crescendo - Montsinery-Tonnegrande, French Guiana</div>
+						<div class="list-item" data-type="oslo">02.09.23 • Oppsal Gatefest - Oppsal, Oslo, Norway</div>
+						<div class="list-item" data-type="norway">13.08.23 • Bakgården - Sandvika, Norway</div>
+						<div class="list-item" data-type="norway">27.05.23 • We Låve Rock 2023 - Grønsand Gjestegård - Hurum, Norway</div>
+						<div class="list-item" data-type="oslo">03.09.22 • Oppsal Gatefest - Oppsal, Oslo, Norway</div>
+						<div class="list-item" data-type="france">19.08.22 • Festival Crescendo - Saint-Palais-sur-Mer, France</div>
+						<div class="list-item" data-type="oslo">08.06.22 • Supermassive release show - Belleville - Oslo, Norway</div>
+						<div class="list-item" data-type="sweden">27.07.19 • Art rock in the city park - Lidköping, Sweden</div>
+						<div class="list-item" data-type="norway">24.05.19 • We Låve Rock 2019 - Grønsand Gjestegård - Hurum, Norway</div>
+						<div class="list-item" data-type="norway">16.03.19 • Close To The Snow Prog Festival - Nidelven Bar og Scene - Trondheim, Norway</div>
+						<div class="list-item" data-type="norway">03.11.18 • Split gig with “Delvoid” - Flasken - Nesodden, Norway</div>
+						<div class="list-item" data-type="oslo">11.10.18 • Nightscape release show - Belleville - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">11.11.17 • Split gig with “Infringement” - Deichman Schous - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">22.09.17 • Split gig with “Suburban Savages” & “Weserbergland” - Belleville - Oslo, Norway</div>
+						<div class="list-item" data-type="sweden">19.08.17 • Slottsskogen Goes Progressive 2017 - Slottsskogen - Gothenburg, Sweden</div>
+						<div class="list-item" data-type="norway">16.06.17 • Slabberaset - Kulturpubben Vårt Hjem - Steinkjer, Norway</div>
+						<div class="list-item" data-type="norway">02.06.17 • Close To The Rain Prog Festival - Garage - Bergen, Norway</div>
+						<div class="list-item" data-type="oslo">23.02.17 • Split gig with “No Man's Island” - Revolver - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">24.11.16 • Split gig with “Warpicks” - MIR - Oslo, Norway</div>
+						<div class="list-item" data-type="norway">28.10.16 • Haugaland Prog & Rock Festival 16 - Høvleriet - Haugesund, Norway</div>
+						<div class="list-item" data-type="oslo">13.10.16 • Meeting Point release show - Belleville - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">19.05.16 • Split gig with “Ghost Community” - Buckleys - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">23.10.15 • Split gig with “Gentle Knife” & “Panzerpappa” - Gamla - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">10.10.15 • Split gig with “The Windmill” - Buckeleys - Oslo, Norway</div>
+						<div class="list-item" data-type="norway">09.10.15 • Split gig with “The Windmill” - Buddy's - Drammen, Norway</div>
+						<div class="list-item" data-type="norway">23.05.15 • We Låve Rock 2015 - Hurum, Norway</div>
+						<div class="list-item" data-type="oslo">30.01.15 • Split gig with “Panzerpappa” - Buckleys - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">18.09.14 • Guiding Light release show - Cafeteatret - Oslo, Norway</div>
+						<div class="list-item" data-type="norway">31.05.14 • We Låve Rock 2014 - Hurum, Norway</div>
+						<div class="list-item" data-type="oslo">24.05.14 • Support for “The Watch” - John Dee - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">23.08.13 • Support for “The Windmill” - Buckleys - Oslo, Norway</div>
+						<div class="list-item" data-type="sweden">18.07.13 • Art rock in the city park - Lidköping, Sweden</div>
+						<div class="list-item" data-type="oslo">28.05.13 • Directions release show - Månefisken - Oslo, Norway</div>
+						<div class="list-item" data-type="oslo">18.06.12 • Split gig with “Felix Martin Trio” - Månefisken - Oslo, Norway</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -202,6 +263,8 @@
 			</section>
 		</footer>
 
-		<script src="./js/script.js"></script>
+		<script src="./js/script.js" defer></script>
+		<script src="./js/slideshow.js" defer></script>
+		<script src="./js/concert-history.js" defer></script>
 	</body>
 </html>
