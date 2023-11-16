@@ -4,19 +4,23 @@ html {
 
 body {
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
 	width: 100vw;
 	height: 100vh;
-	background-image: url(../assets/images/background-pymlico.png);
+	background-image: url(../assets/images/background-image-pymlico.png);
 	background-size: cover;
 	color: black;
+	padding: 3rem;
 }
 
 .overview__button {
 	color: black;
+	transition: color 0.05s 0.05s;
 }
 
 .overview__button:hover {
-	color: white;
+	color: white;	
+
 }
 
 .component {
@@ -54,27 +58,51 @@ h1 {
 	letter-spacing: .1rem;
 }
 
+h2 {
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	font-size: 36px;
+	letter-spacing: 0.1rem;
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+}
+
+h3 {
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	font-size: 24px;
+	letter-spacing: .1rem;
+}
+
+.undertitle_dense {
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	letter-spacing: .1rem;
+	margin-top: -1rem;
+}
+
 .header__links {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 	gap: 1rem;
 	margin-top: 1rem;
 	font-size: 16px;
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 200;
 	letter-spacing: .2rem;
 }
 
-.header__links:hover {
-	color: grey;
-}
-
 .header__image {
-	width: 100%;
+	width: 90%;
 	margin-top: 2rem;
 }
 
 .header__icons {
-	margin-top: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -84,6 +112,13 @@ h1 {
 .header__icons img {
 	width: 24px;
 	height: 24px;
+	cursor: pointer;
+	transition: all 0.05s 0.05s;
+}
+
+.header__icons img:hover {
+	background-color: white;
+	border-radius: 50%;
 }
 
 .main_container {
@@ -91,4 +126,61 @@ h1 {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	gap: 1.5rem;
+}
+
+.button__blue {
+background-color: #0F4972;
+color: white;
+padding: 0.4rem;
+font-family: 'Dense', sans-serif;
+font-weight: 200;
+letter-spacing: .1rem;
+width: fit-content;
+transition: color 0.05s 0.05s;
+}
+
+.button__blue:hover {
+	color: #4c8ab7;
+}
+
+.album-cover {
+	height: 90%;
+	width: 90%;
+}
+
+.white-square {
+	width: fit-content;
+	height: fit-content;
+	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.5rem;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.left {
+	margin-left: -20rem;
+	z-index: 5;
+}
+
+.right {
+	margin-right: -3rem;
+	z-index: 10;
+}
+
+footer {
+	height: 10rem;
+	width: 100%;
+	background-image: url('../assets/images/background-image-pymlico.png');
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	padding-bottom: 1rem;
 }
