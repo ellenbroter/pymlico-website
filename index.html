@@ -13,248 +13,396 @@
 		<link rel="stylesheet" href="./css/slideshow.css">
 		<link rel="stylesheet" href="./css/concert-history.css">
 	</head>
-	<body id="home">
+	<body>
 		<section class="page-hero">
 			<div class="grid">
 				<div class="column--12 header">
-					<h1>PYMLICO</h1>
+					<h1><a href="index.html">PYMLICO</a></h1>
 					<ul class="header__links">
-						<li><a href="#home"><button data-component="home" class="overview__button overview__button--active">HOME</button></a></li>
-						<li><a href="#about"><button data-component="about" class="overview__button overview__button--active">ABOUT</button></a></li>
-						<li><a href="#concerts"><button data-component="concerts" class="overview__button overview__button--active">CONCERTS</button></a></li>
+						<li><button data-component="home" class="overview__button">HOME</button></li>
+						<li><a href="#concerts"><button data-component="home" class="overview__button">CONCERTS</button></a></li>
+						<li><a href="#about"><button data-component="home" class="overview__button">ABOUT</button></a></li>
 						<li><button data-component="discography" class="overview__button overview__button--active">DISCOGRAPHY</button></li>
-						<li><button data-component="videos" class="overview__button overview__button--active">VIDEOS</button></li>
 						<li><button data-component="shop" class="overview__button overview__button--active">SHOP</button></li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<img class="header__image" src="./assets/images/Header-hjemmeside-1.jpeg">
-				</div>
-			</div>
-		</section>
-
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--12 header__icons">
-						<img src="./assets/images/icons/black/facebook-logo.svg">
-						<img src="./assets/images/icons/black/instagram-logo.svg">
-						<img src="./assets/images/icons/black/youtube-logo.svg">
-						<img src="./assets/images/icons/black/spotify-logo.svg">
-						<img src="./assets/images/icons/black/soundcloud-logo.svg">
-						<img src="./assets/images/icons/black/envelope.svg">
+		<div class="component component--visible" data-name="home">
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<img class="header__image" src="./assets/images/Header-hjemmeside-1.jpeg">
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<h2>NEW ALBUM • SUPERMASSIVE • OUT NOW</h2>
-				</div>
-			</div>
-		</section>
-
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--6 main_container">
-					<img class="album-cover" src="./assets/images/album-covers/Pymlico-Supermassive-Cover-3600-800x800.jpeg">
-				</div>
-				<div class="column--6 main_container">
-					<div class="white-square left">
-						<h3>SUPERMASSIVE</h3>
-						<p class="undertitle_dense">VINYL • CD • STREAMING</p>
-						<p>The seventh album by Pymlico, "Supermassive," is out! 🎉</p>
-						<p>Order it here and get it delivered directly from us to you.</p>
-						<button class="button__blue">GET YOUR VINYL HERE</button>
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 header__icons">
+							<a href="https://www.facebook.com/Pymlico"><img src="./assets/images/icons/black/facebook-logo.svg"></a>
+							<a href="https://www.instagram.com/pymlico/"><img src="./assets/images/icons/black/instagram-logo.svg"></a>
+							<a href="https://www.youtube.com/@pymlicomusic"><img src="./assets/images/icons/black/youtube-logo.svg"></a>
+							<a href="https://open.spotify.com/artist/5JJjg1uL3VhIH8qkvWuA60?si=0o2KXuqFTAyeKJSQ3IsOAQ"><img src="./assets/images/icons/black/spotify-logo.svg"></a>
+							<a href="https://on.soundcloud.com/1PDWw"><img src="./assets/images/icons/black/soundcloud-logo.svg"></a>
+							<a href="mailto:webmaster@example.com"><img src="./assets/images/icons/black/envelope.svg"></a>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<h2>NEW VIDEO • SECOND RATE PUNK • LIVE IN STUDIO</h2>
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>NEW ALBUM • SUPERMASSIVE • OUT NOW</h2>
+					</div>
 				</div>
-				<div class="column--12 main_container">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/I-QUJCiSP24?si=bckkLUZJbFPEzYQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-				<div class="column--12 main_container">
-					<button class="button__blue">MORE VIDEOS</button>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="page-section" id="concerts">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<h2>CONCERTS</h2>
-					<p>No planned concerts at the moment</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="page-section" id="concerts">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<div class="slideshow-container">
-						<h3>PYMLICO • FRENCH GUIANA • 10/20/23</h3>
-						<div class="slides">
-						  <img src="./assets/images/french-guiana-slideshow/01.jpeg" alt="Image 1">
-						  <img src="./assets/images/french-guiana-slideshow/02.jpeg" alt="Image 2">
-						  <img src="./assets/images/french-guiana-slideshow/03.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/04.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/05.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/06.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/07.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/08.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/09.jpeg" alt="Image 3">
-						  <img src="./assets/images/french-guiana-slideshow/10.jpeg" alt="Image 3">
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--2 main_container">
+					</div>
+					<div class="column--4 main_container">
+						<img class="album-cover" src="./assets/images/album-covers/Pymlico-Supermassive-Cover-3600-800x800.jpeg">
+					</div>
+					<div class="column--4 main_container left">
+						<div class="white-square">
+							<h3>SUPERMASSIVE</h3>
+							<p class="undertitle_dense">VINYL • CD • STREAMING</p>
+							<p>The seventh album by Pymlico, "Supermassive," is out! 🎉</p>
+							<p>Order it here and get it delivered directly from us to you.</p>
+							<button class="button__blue">GET YOUR VINYL HERE</button>
 						</div>
-						<p class="slideshow-credit_dense">Credit <a href="https://www.facebook.com/lifetimephotographie">Lifetime Photographie - Guillaume BRET</a></>
-					 
-						<a class="prev" onclick="previousSlide()"><img src="./assets/images/icons/white/caret-left-white.svg"></a>
-						<a class="next" onclick="nextSlide()"><img src="./assets/images/icons/white/caret-right-white.svg"></a>
-					 </div>
-				</div>
-			</div>
-		</section>
-
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<h2>CONCERT HISTORY</h2>
-				</div>
-			</div>
-		</section>
-
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--12 filter-buttons">
-					<button class="filter-button" data-filter-by="*">All locations</button>
-					<button class="filter-button" data-filter-by="oslo">Norway, Oslo</button>
-					<button class="filter-button" data-filter-by="norway">Norway</button>
-					<button class="filter-button" data-filter-by="sweden">Sweden</button>
-					<button class="filter-button" data-filter-by="france">France</button>
-					<button class="filter-button" data-filter-by="french-guiana">French Guiana</button>
-				</div>
-		
-				<div class="column--12 main_container">
-					<div class="list-items">
-						<div class="list-item" data-type="french-guiana">20.10.23 • Festival Crescendo - Montsinery-Tonnegrande, French Guiana</div>
-						<div class="list-item" data-type="oslo">02.09.23 • Oppsal Gatefest - Oppsal, Oslo, Norway</div>
-						<div class="list-item" data-type="norway">13.08.23 • Bakgården - Sandvika, Norway</div>
-						<div class="list-item" data-type="norway">27.05.23 • We Låve Rock 2023 - Grønsand Gjestegård - Hurum, Norway</div>
-						<div class="list-item" data-type="oslo">03.09.22 • Oppsal Gatefest - Oppsal, Oslo, Norway</div>
-						<div class="list-item" data-type="france">19.08.22 • Festival Crescendo - Saint-Palais-sur-Mer, France</div>
-						<div class="list-item" data-type="oslo">08.06.22 • Supermassive release show - Belleville - Oslo, Norway</div>
-						<div class="list-item" data-type="sweden">27.07.19 • Art rock in the city park - Lidköping, Sweden</div>
-						<div class="list-item" data-type="norway">24.05.19 • We Låve Rock 2019 - Grønsand Gjestegård - Hurum, Norway</div>
-						<div class="list-item" data-type="norway">16.03.19 • Close To The Snow Prog Festival - Nidelven Bar og Scene - Trondheim, Norway</div>
-						<div class="list-item" data-type="norway">03.11.18 • Split gig with “Delvoid” - Flasken - Nesodden, Norway</div>
-						<div class="list-item" data-type="oslo">11.10.18 • Nightscape release show - Belleville - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">11.11.17 • Split gig with “Infringement” - Deichman Schous - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">22.09.17 • Split gig with “Suburban Savages” & “Weserbergland” - Belleville - Oslo, Norway</div>
-						<div class="list-item" data-type="sweden">19.08.17 • Slottsskogen Goes Progressive 2017 - Slottsskogen - Gothenburg, Sweden</div>
-						<div class="list-item" data-type="norway">16.06.17 • Slabberaset - Kulturpubben Vårt Hjem - Steinkjer, Norway</div>
-						<div class="list-item" data-type="norway">02.06.17 • Close To The Rain Prog Festival - Garage - Bergen, Norway</div>
-						<div class="list-item" data-type="oslo">23.02.17 • Split gig with “No Man's Island” - Revolver - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">24.11.16 • Split gig with “Warpicks” - MIR - Oslo, Norway</div>
-						<div class="list-item" data-type="norway">28.10.16 • Haugaland Prog & Rock Festival 16 - Høvleriet - Haugesund, Norway</div>
-						<div class="list-item" data-type="oslo">13.10.16 • Meeting Point release show - Belleville - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">19.05.16 • Split gig with “Ghost Community” - Buckleys - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">23.10.15 • Split gig with “Gentle Knife” & “Panzerpappa” - Gamla - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">10.10.15 • Split gig with “The Windmill” - Buckeleys - Oslo, Norway</div>
-						<div class="list-item" data-type="norway">09.10.15 • Split gig with “The Windmill” - Buddy's - Drammen, Norway</div>
-						<div class="list-item" data-type="norway">23.05.15 • We Låve Rock 2015 - Hurum, Norway</div>
-						<div class="list-item" data-type="oslo">30.01.15 • Split gig with “Panzerpappa” - Buckleys - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">18.09.14 • Guiding Light release show - Cafeteatret - Oslo, Norway</div>
-						<div class="list-item" data-type="norway">31.05.14 • We Låve Rock 2014 - Hurum, Norway</div>
-						<div class="list-item" data-type="oslo">24.05.14 • Support for “The Watch” - John Dee - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">23.08.13 • Support for “The Windmill” - Buckleys - Oslo, Norway</div>
-						<div class="list-item" data-type="sweden">18.07.13 • Art rock in the city park - Lidköping, Sweden</div>
-						<div class="list-item" data-type="oslo">28.05.13 • Directions release show - Månefisken - Oslo, Norway</div>
-						<div class="list-item" data-type="oslo">18.06.12 • Split gig with “Felix Martin Trio” - Månefisken - Oslo, Norway</div>
+					</div>
+					<div class="column--2 main_container">
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="page-section" id="about">
-			<div class="grid">
-				<div class="column--12 main_container">
-					<h2>ABOUT</h2>
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>NEW VIDEO • SECOND RATE PUNK • LIVE IN STUDIO</h2>
+					</div>
+					<div class="column--12 main_container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/I-QUJCiSP24?si=bckkLUZJbFPEzYQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<div class="column--12 main_container">
+						<button class="button__blue">MORE VIDEOS</button>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="page-section">
-			<div class="grid">
-				<div class="column--6 main_container">
-					<div class="white-square right">
-						Pymlico is an instrumental band from Oslo, Norway, led by composer and drummer Arild Brøter. The band mainly plays what has been described as a mix between progressive rock and fusion.  However, their music also offers catchy hooks and singable melodies associated with pop music, alongside  grandiose themes more in the vein of movie sound tracks. This combination of genres and a high level of  musicianship gives the band it's distinctive sound.
-						<p class="undertitle_dense">Øyvind Brøter • Stephan Hvinden • Andreas Sjo Engen</p>
+			<section class="page-section" id="concerts">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>CONCERTS</h2>
+						<p class="white-square">No planned concerts at the moment</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section" id="concerts">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<div class="slideshow-container">
+							<h3>PYMLICO • FRENCH GUIANA • 10/20/23</h3>
+							<div class="slides">
+							<img src="./assets/images/french-guiana-slideshow/01.jpeg" alt="Image 1">
+							<img src="./assets/images/french-guiana-slideshow/02.jpeg" alt="Image 2">
+							<img src="./assets/images/french-guiana-slideshow/03.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/04.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/05.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/06.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/07.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/08.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/09.jpeg" alt="Image 3">
+							<img src="./assets/images/french-guiana-slideshow/10.jpeg" alt="Image 3">
+							</div>
+							<p class="slideshow-credit_dense">Credit <a href="https://www.facebook.com/lifetimephotographie">Lifetime Photographie - Guillaume BRET</a></>
+						
+							<a class="prev" onclick="previousSlide()"><img src="./assets/images/icons/white/caret-left-white.svg"></a>
+							<a class="next" onclick="nextSlide()"><img src="./assets/images/icons/white/caret-right-white.svg"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>CONCERT HISTORY</h2>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 filter-buttons">
+						<button class="filter-button" data-filter-by="*">All locations</button>
+						<button class="filter-button" data-filter-by="oslo">Norway, Oslo</button>
+						<button class="filter-button" data-filter-by="norway">Norway</button>
+						<button class="filter-button" data-filter-by="sweden">Sweden</button>
+						<button class="filter-button" data-filter-by="france">France</button>
+						<button class="filter-button" data-filter-by="french-guiana">French Guiana</button>
+					</div>
+			
+					<div class="column--12 main_container">
+						<div class="list-items">
+							<div class="list-item" data-type="french-guiana">20.10.23 • Festival Crescendo - Montsinery-Tonnegrande, French Guiana</div>
+							<div class="list-item" data-type="oslo">02.09.23 • Oppsal Gatefest - Oppsal, Oslo, Norway</div>
+							<div class="list-item" data-type="norway">13.08.23 • Bakgården - Sandvika, Norway</div>
+							<div class="list-item" data-type="norway">27.05.23 • We Låve Rock 2023 - Grønsand Gjestegård - Hurum, Norway</div>
+							<div class="list-item" data-type="oslo">03.09.22 • Oppsal Gatefest - Oppsal, Oslo, Norway</div>
+							<div class="list-item" data-type="france">19.08.22 • Festival Crescendo - Saint-Palais-sur-Mer, France</div>
+							<div class="list-item" data-type="oslo">08.06.22 • Supermassive release show - Belleville - Oslo, Norway</div>
+							<div class="list-item" data-type="sweden">27.07.19 • Art rock in the city park - Lidköping, Sweden</div>
+							<div class="list-item" data-type="norway">24.05.19 • We Låve Rock 2019 - Grønsand Gjestegård - Hurum, Norway</div>
+							<div class="list-item" data-type="norway">16.03.19 • Close To The Snow Prog Festival - Nidelven Bar og Scene - Trondheim, Norway</div>
+							<div class="list-item" data-type="norway">03.11.18 • Split gig with “Delvoid” - Flasken - Nesodden, Norway</div>
+							<div class="list-item" data-type="oslo">11.10.18 • Nightscape release show - Belleville - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">11.11.17 • Split gig with “Infringement” - Deichman Schous - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">22.09.17 • Split gig with “Suburban Savages” & “Weserbergland” - Belleville - Oslo, Norway</div>
+							<div class="list-item" data-type="sweden">19.08.17 • Slottsskogen Goes Progressive 2017 - Slottsskogen - Gothenburg, Sweden</div>
+							<div class="list-item" data-type="norway">16.06.17 • Slabberaset - Kulturpubben Vårt Hjem - Steinkjer, Norway</div>
+							<div class="list-item" data-type="norway">02.06.17 • Close To The Rain Prog Festival - Garage - Bergen, Norway</div>
+							<div class="list-item" data-type="oslo">23.02.17 • Split gig with “No Man's Island” - Revolver - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">24.11.16 • Split gig with “Warpicks” - MIR - Oslo, Norway</div>
+							<div class="list-item" data-type="norway">28.10.16 • Haugaland Prog & Rock Festival 16 - Høvleriet - Haugesund, Norway</div>
+							<div class="list-item" data-type="oslo">13.10.16 • Meeting Point release show - Belleville - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">19.05.16 • Split gig with “Ghost Community” - Buckleys - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">23.10.15 • Split gig with “Gentle Knife” & “Panzerpappa” - Gamla - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">10.10.15 • Split gig with “The Windmill” - Buckeleys - Oslo, Norway</div>
+							<div class="list-item" data-type="norway">09.10.15 • Split gig with “The Windmill” - Buddy's - Drammen, Norway</div>
+							<div class="list-item" data-type="norway">23.05.15 • We Låve Rock 2015 - Hurum, Norway</div>
+							<div class="list-item" data-type="oslo">30.01.15 • Split gig with “Panzerpappa” - Buckleys - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">18.09.14 • Guiding Light release show - Cafeteatret - Oslo, Norway</div>
+							<div class="list-item" data-type="norway">31.05.14 • We Låve Rock 2014 - Hurum, Norway</div>
+							<div class="list-item" data-type="oslo">24.05.14 • Support for “The Watch” - John Dee - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">23.08.13 • Support for “The Windmill” - Buckleys - Oslo, Norway</div>
+							<div class="list-item" data-type="sweden">18.07.13 • Art rock in the city park - Lidköping, Sweden</div>
+							<div class="list-item" data-type="oslo">28.05.13 • Directions release show - Månefisken - Oslo, Norway</div>
+							<div class="list-item" data-type="oslo">18.06.12 • Split gig with “Felix Martin Trio” - Månefisken - Oslo, Norway</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section" id="about">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>ABOUT</h2>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--6 main_container">
+						<div class="white-square right">
+							Pymlico is an instrumental band from Oslo, Norway, led by composer and drummer Arild Brøter. The band mainly plays what has been described as a mix between progressive rock and fusion.  However, their music also offers catchy hooks and singable melodies associated with pop music, alongside  grandiose themes more in the vein of movie sound tracks. This combination of genres and a high level of  musicianship gives the band it's distinctive sound.
+							<p class="undertitle_dense">Øyvind Brøter • Stephan Hvinden • Andreas Sjo Engen</p>
 							<p class="undertitle_dense">Are Nerland • Robin Havem Løvøy • Arild Brøter • Oda Rydning</p>
-						<button class="button__blue">READ MORE ABOUT US</button>
+						</div>
 					</div>
-					
-				</div>
 
-				<div class="column--6 main_container">
-					<img src="./assets/images/Pymlico-Anne-Marie-Forker-www.forkerfotos.com-0-BW-2048x1280.jpg">
+					<div class="column--6 main_container">
+						<img src="./assets/images/Pymlico-Anne-Marie-Forker-www.forkerfotos.com-0-BW-2048x1280.jpg">
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
 		
-			<div class="component" data-name="about">
-				<div class="component-state">
-					<div class="component-state__name">
-						Normal
-					</div>
-
-					<div class="component-state__variant">
-						Accordion normal
+		<div class="component" data-name="discography">
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>DISCOGRAPHY</h2>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="component" data-name="concerts">
-				<div class="component-state">
-					<div class="component-state__name">
-						Normal
-					</div>
-
-					<div class="component-state__variant">
-						Breadcrumbs normal
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--4 main_container">
+						<h3>SUPERMASSIVE (2022)</h3>
+						<div>
+							<img class="album-cover-image" src="./assets/images/album-covers/Pymlico-Supermassive-Cover-3600-800x800.jpeg">
+							<ul class="title_dense">
+								<li>Cover photo by Patrick Janson</li>
+								<li>Bandphoto by Vilde Badendyck</li>
+								<li>Cover design by Colour Basement</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="column--4 main_container">
+						<ul class="title_dense">
+							<li>TRACKS:</li>
+							<li>01 - Wide Awake (A. Brøter / Ø. Brøter)</li>
+							<li>02 - Gabagool (A. Brøter)</li>
+							<li>03 - Tofana 10 AM (A. Brøter / Ø. Brøter)</li>
+							<li>04 - A Room With a View (A. Brøter / Ø. Brøter / M. Færevaag)</li>
+							<li>05 - Ghost Notes (A. Brøter / Ø. Brøter / S. Hvinden)</li>
+							<li>06 - Road Movie (A. Brøter / Ø. Brøter / M. Færevaag)</li>
+							<li>07 - Silver Arrow (A. Brøter / Ø. Brøter)</li>
+						</ul>
+						<ul class="title_dense">	
+							<li>PERFORMED BY:</li>
+							<li>Øyvind Brøter: Keyboards</li>
+							<li>Stephan Hvinden: Guitars</li>
+							<li>Andreas Sjo Engen: Guitars</li>
+							<li>Axel Toreg Reite: Bass guitar / synth bass</li>
+							<li>Marie Færevaag: Saxophones / keyboards / voice</li>
+							<li>Arild Brøter: Drums / keyboards / additional guitars</li>
+							<li>Oda Rydning: Percussion</li>
+						</ul>
+					</div>		
+					<div class="column--4 main_container">
+						<ul class="title_dense">
+							<li >with:</li>
+							<li>Mattias Krohn Nielsen: Acoustic guitars (1, 2, 3, 4) / electric guitars (3)</li>
+							<li>Ketil Vestrum Einarsen: Flute (1, 2)</li>
+							<li>Didrik Føyn Føyen: Trombone (2)</li>
+							<li>Andreas Fossum: Trumpet (2)</li>
+						</ul>
+						<ul class="title_dense">
+							<li>CREDITS:</li>
+							<li>Produced and arranged by Arild Brøter and Øyvind Brøter</li>
+							<li>Engineered, recorded and mixed by Arild Brøter in Double Decker Studios, Oslo, Norway</li>
+							<li>Mastered by Chris Sansom in Propeller Mastring, Oslo, Norway</li>
+						</ul>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="component" data-name="discography">
-				<div class="component-state">
-					<div class="component-state__name">
-						Normal
-					</div>
-
-					<div class="component-state__variant">
-						Breadcrumbs normal
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--4 main_container">
+						<h3>ON THIS DAY (2020)</h3>
+						<div>
+							<img class="album-cover-image" src="./assets/images/album-covers/Pymlico-On-This-Day-3100-800x800.jpeg">
+							<ul class="title_dense">
+								<li>Credits:</li>
+								<li>Produced by Arild Brøter & Øyvind Brøter</li>
+								<li>Engineered, recorded & mixed by Arild Brøter in “Double Decker Studios”, Oslo, Norway</li>
+								<li>Drums engineered & recorded by Frode Martinsen in “Velvet Recording”, Spydeberg, Norway</li>
+								<li>Mastered by Morten Lund in “Lunds Lyd”, Oslo, Norway</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="column--4 main_container">
+						<ul class="title_dense">
+							<li>TRACKS:</li>
+							<li>01 - Heliotrope (A. Brøter)</li>
+							<li>02 - Time-turner (A. Brøter / Ø. Brøter)</li>
+							<li>03 - Survival Guide (A. Brøter / Ø. Brøter)</li>
+							<li>04 - Real People (A. Brøter / Ø. Brøter)</li>
+							<li>05 - Partners in Crime (A. Brøter / Ø. Brøter / S. Hvinden)</li>
+							<li>06 - Jump Start (A. Brøter)</li>
+							<li>07 - Sidemen Inc. (A. Brøter / Ø. Brøter)</li>
+							<li>08 - Solex Agitator (A. Brøter)</li>
+						</ul>
+						<ul class="title_dense">	
+							<li>PERFORMED BY:</li>
+							<li>Øyvind Brøter: Keyboards / synth bass</li>
+							<li>Stephan Hvinden: Guitars</li>
+							<li>Andreas Sjo Engen: Guitars</li>
+							<li>Robin Havem Løvøy: Saxophones</li>
+							<li>Arild Brøter: Drums / keyboards / additional guitars</li>
+							<li>Oda Rydning: Percussion</li>
+						</ul>
+					</div>		
+					<div class="column--4 main_container">
+						<ul class="title_dense">
+							<li >with:</li>
+							<li>Stian Fjeld Engen: Bass guitar (1,5)</li> 
+							<li>Magnus Tveten: Bass guitar (2)</li>
+							<li>Are Nerland: Bass guitar (3)</li>
+							<li>Øystein Utby: Bass guitar (4,7)</li>
+							<li>Håkon Rasmussen: Bass guitar (6)</li>
+							<li>Kristian Hultgren: Bass guitar (8)</li>
+							<li>Mattias Krohn Nielsen: Acoustic guitars (2,4,6,7,8) / electric guitar (4,6,8)</li>
+							<li>Geir-Anders Haugen: Additional electric guitar (3)</li>
+							<li>Ole Michael Bjørndal: Additional electric guitar (6)</li>
+							<li>Sverre Tollefsen Laupstad: Additional keyboards / string arrangements (8)</li>
+							<li>Nicolay Tangen Svennæs: Synth bass (4)</li>
+							<li>Even Kruse Skatrud: Trombone / trumpet / horn arrangements (3,5)</li>
+							<li>Vegard Sandbukt: Trumpet (4,6,7)</li>
+							<li>Filip Brekke Steigedal: Trombone (4,7)</li>
+							<li>Roger Hansen: Bass trombone (3)</li>
+							<li>Åsa Ree: Violin (1,3)</li>
+							<li>Sturla Nøstvik: Gong drum (8)</li>
+						</ul>
 					</div>
 				</div>
+			</section>
+
+		</div>
+
+		<div class="component" data-name="shop">
+			<div class="component-state">
+				<div class="component-state__name">
+					SHOP her
+				</div>
 			</div>
-		</main>
+		</div>
+
+		<div class="component" data-name="media">
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2>HIGH RESOLUTION IMAGES • VIDEOS • INTERVIEWS</h2>
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--4 main_container">
+						<img class="media-kit-image" src="./assets/images/media-kit/pymlico-anne-marie-forker-forkerfotos-0-scaled480x300.jpg">
+					</div>
+					<div class="column--4 main_container">
+						<img class="media-kit-image" src="./assets/images/media-kit/pymlico-anne-marie-forker-forkerfotos-0-BW-scaled480x300.jpg">
+					</div>
+					<div class="column--4 main_container">
+						<img class="media-kit-image" src="./assets/images/media-kit/pymlico-collage-studio-scaled300x300.jpg">
+					</div>
+				</div>
+			</section>
+
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--4 main_container">
+						<p class="white-square">Pymlico Color.jpg<br>
+							Dimensions:  5634 x 3524 px<br>
+							Photo: Anne-Marie Forker</p>
+					</div>
+					<div class="column--4 main_container">
+						<div class="white-square">
+							<p>Pymlico Black and White.jpg</p>
+							<p>Dimensions: 5634 x 3524 px</p>
+							<p>Photo: Anne-Marie Forker</p>
+							<p class="undertitle_dense">Download high resolution photo</p>
+						</div>
+					</div>
+					<div class="column--4 main_container">
+						<p class="white-square">Studio Collage.jpg<br>
+							Dimensions: 3543 x 3543 px<br>
+							Photo: Anne-Marie Forker</p>
+					</div>
+				</div>
+			</section>
+		</div>
 
 		<footer>
 			<section class="page-section">
 				<div class="grid">
-					<div class="column--12 main_container">
+					<div class="column--6 main_container">
 						Apollon records
+					</div>
+					<div class="column--6 main_container">
+						<button data-component="media" class="overview__button overview__button--active">MEDIA KIT</button>
 					</div>
 					<div class="column--12 main_container">
 						<button class="button__blue button-top">TO THE TOP</button>
