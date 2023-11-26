@@ -1,0 +1,86 @@
+.cart {
+	position: relative;
+	background-color: white;
+	color: #212529;
+	padding: 5px;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: row;
+	height: 3rem;
+	width: 3rem;
+}
+
+.sticky{
+	position: sticky;
+	top: 2rem;
+}
+
+.shop-title {
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	font-size: 36px;
+	letter-spacing: 0.1rem;
+	margin-top: 5rem;
+	margin-bottom: 0;
+}
+
+.shop-images {
+	width: 219px;
+}
+
+.cartAmount {
+	position: absolute;
+	top: -15px;
+	right: -10px;
+	font-size: 16px;
+	background-color: red;
+	color: white;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.shop {
+	display: grid;
+	grid-template-columns: repeat(4, 223px);
+	gap: 30px;
+	justify-content: center;
+}
+
+@media (max-width: 1000px) {
+	.shop {
+		grid-template-columns: repeat(2, 223px);
+	}
+}
+
+@media (max-width: 500px) {
+	.shop {
+		grid-template-columns: repeat(1, 223px);
+	}
+}
+
+
+.item {
+	border: 2px solid #212529;
+	border-radius: 4px;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 10px;
+}
+
+.price-quantity {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	cursor: pointer;
+}
