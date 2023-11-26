@@ -63,7 +63,7 @@ h2 {
 	font-weight: 200;
 	font-size: 36px;
 	letter-spacing: 0.1rem;
-	margin-top: 6rem;
+	margin-top: 5rem;
 	margin-bottom: 3rem;
 }
 
@@ -83,6 +83,13 @@ h3 {
 	margin-top: -1rem;
 }
 
+.title_dense {
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	letter-spacing: .1rem;
+}
+
 .header__links {
 	display: flex;
 	flex-flow: row wrap;
@@ -97,7 +104,7 @@ h3 {
 }
 
 .header__image {
-	width: 90%;
+	width: 100%;
 	margin-top: 2rem;
 }
 
@@ -160,7 +167,7 @@ transition: color 0.05s 0.05s;
 }
 
 .left {
-	margin-left: -20rem;
+	margin-left: -3rem;
 	z-index: 10;
 }
 
@@ -178,4 +185,14 @@ footer {
 	justify-content: center;
 	align-items: end;
 	padding-bottom: 1rem;
+}
+
+.media-kit-image {
+	height: 150px;
+	width: auto;
+}
+
+.album-cover-image {
+	height: 20rem;
+	width: 20rem;
 }
