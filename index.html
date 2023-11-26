@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./css/grid.css">
 		<link rel="stylesheet" href="./css/slideshow.css">
 		<link rel="stylesheet" href="./css/concert-history.css">
+		<link rel="stylesheet" href="./css/shop.css">
 	</head>
 	<body>
 		<section class="page-hero">
@@ -341,10 +342,20 @@
 		</div>
 
 		<div class="component" data-name="shop">
-			<div class="component-state">
-				<div class="component-state__name">
-					SHOP her
+			<section class="page-section">
+				<div class="grid">
+					<div class="column--12 main_container">
+						<h2 class="shop-title">SHOP</h2>
+					</div>
 				</div>
+			</section>
+
+			<div class="cart sticky">
+				<img src="./assets/images/icons/black/shopping-cart.svg">
+				<div id="cartAmount" class="cartAmount">0</div>
+			</div>
+		
+			<div class="shop" id="shop">
 			</div>
 		</div>
 
@@ -414,5 +425,6 @@
 		<script src="./js/script.js" defer></script>
 		<script src="./js/slideshow.js" defer></script>
 		<script src="./js/concert-history.js" defer></script>
+		<script src="./js/shop.js" defer></script>
 	</body>
 </html>
