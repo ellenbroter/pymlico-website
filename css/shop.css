@@ -38,8 +38,6 @@
 	width: 219px;
 }
 
-
-
 .shop {
 	display: grid;
 	grid-template-columns: repeat(4, 223px);
