@@ -131,6 +131,14 @@ h3 {
 	gap: 1.5rem;
 }
 
+.flex_discography {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	gap: 1.5rem;
+}
+
 .button__blue {
 background-color: #0F4972;
 color: white;
