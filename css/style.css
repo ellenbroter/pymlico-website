@@ -19,7 +19,7 @@ body {
 }
 
 .overview__button:hover {
-	color: white;	
+	color: #0F4972;	
 
 }
 
@@ -185,6 +185,10 @@ footer {
 	justify-content: center;
 	align-items: end;
 	padding-bottom: 1rem;
+}
+
+.footer-image {
+	height: 3rem;
 }
 
 .media-kit-image {
