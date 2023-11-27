@@ -10,9 +10,19 @@
 	width: 3rem;
 }
 
-.sticky{
-	position: sticky;
-	top: 2rem;
+.cart-amount {
+	position: absolute;
+	top: -15px;
+	right: -10px;
+	font-size: 16px;
+	background-color: #0F4972;
+	color: white;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.cart-flex {
+
 }
 
 .shop-title {
@@ -28,16 +38,7 @@
 	width: 219px;
 }
 
-.cartAmount {
-	position: absolute;
-	top: -15px;
-	right: -10px;
-	font-size: 16px;
-	background-color: red;
-	color: white;
-	padding: 3px;
-	border-radius: 3px;
-}
+
 
 .shop {
 	display: grid;

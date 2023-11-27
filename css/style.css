@@ -10,7 +10,7 @@ body {
 	background-image: url(../assets/images/background-image-pymlico.png);
 	background-size: cover;
 	color: black;
-	padding: 3rem;
+	padding: 2rem 3rem;
 }
 
 .overview__button {
@@ -19,8 +19,7 @@ body {
 }
 
 .overview__button:hover {
-	color: #0F4972;	
-
+	color: #0F4972;
 }
 
 .component {
@@ -207,4 +206,12 @@ footer {
 .album-cover-image {
 	height: 20rem;
 	width: 20rem;
+}
+
+.cart-flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: end;
+	position: sticky;
+	top: 2rem;
 }
