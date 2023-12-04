@@ -48,7 +48,7 @@ function displayComponent(event) {
 
 // Back to the top - button
 
-const topButton = document.querySelector('.button-top');
+const topButton = document.querySelector('.button__top');
 topButton.addEventListener('click', () =>{
 	window.scroll({
 		top: 0, 

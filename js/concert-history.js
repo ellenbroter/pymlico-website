@@ -1,6 +1,6 @@
-const filterButtons = document.querySelectorAll('.filter-button');
+const filterButtons = document.querySelectorAll('.filter--button');
 const listItems = document.querySelectorAll('.list-item'); //NodeList
-const listItemsContainer = document.querySelector('.list-items');
+const listItemsContainer = document.querySelector('.filter__list-items');
 
 filterButtons.forEach(filterButton => {
 	const filterList = (event) => {

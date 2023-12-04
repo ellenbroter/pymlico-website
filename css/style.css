@@ -74,7 +74,7 @@ h3 {
 	text-align: center;
 }
 
-.undertitle_dense {
+.undertitle__dense {
 	font-family: 'Dense', sans-serif;
 	font-weight: 200;
 	font-size: 16px;
@@ -82,7 +82,7 @@ h3 {
 	margin-top: -1rem;
 }
 
-.title_dense {
+.title__dense {
 	font-family: 'Dense', sans-serif;
 	font-weight: 200;
 	font-size: 16px;
@@ -122,7 +122,7 @@ h3 {
 	cursor: pointer;
 }
 
-.main_container {
+.flex {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -130,7 +130,7 @@ h3 {
 	gap: 1.5rem;
 }
 
-.flex_discography {
+.discography__flex {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -157,12 +157,12 @@ h3 {
 	color: #4c8ab7;
 }
 
-.album-cover {
-	height: 90%;
-	width: 90%;
+.discography__album-cover {
+	height: 350px;
+	width: 350px;
 }
 
-.white-square {
+.paragraph-white {
 	width: fit-content;
 	height: fit-content;
 	background-color: white;
@@ -177,7 +177,7 @@ h3 {
 	line-height: 1.5rem;
 }
 
-.yt {
+.youtube__iframe {
 	width: 100%;
  }
 
@@ -202,7 +202,7 @@ footer {
 	padding-bottom: 1rem;
 }
 
-.discography_title {
+.discography__title {
 	font-family: 'Dense', sans-serif;
 	font-weight: 200;
 	font-size: 36px;
@@ -215,19 +215,19 @@ footer {
 margin-top: 1rem;
 }
 
-.footer-image {
+.footer__image-apollon {
 	height: 3rem;
 	width: 6rem;
 }
 
-.media-kit-image {
+.media-kit__image {
 	height: 150px;
 	width: auto;
 }
 
-.album-cover-image {
-	height: 20rem;
-	width: 20rem;
+.album-cover {
+	height: 25rem;
+	width: 25rem;
 }
  
 @media screen and (max-width: 1023px) {
@@ -247,6 +247,11 @@ margin-top: 1rem;
 		align-items: center;
 		gap: 1.5rem;
 		margin-right: 0;
+	}
+
+	.discography__album-cover {
+		height: 250px;
+		width: 250px;
 	}
 }
 
