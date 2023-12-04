@@ -139,14 +139,18 @@ h3 {
 }
 
 .button__blue {
-background-color: #0F4972;
-color: white;
-padding: 0.4rem;
-font-family: 'Dense', sans-serif;
-font-weight: 200;
-letter-spacing: .1rem;
-width: fit-content;
-transition: color 0.05s 0.05s;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #0F4972;
+	color: white;
+	padding: 0.4rem;
+	font-family: 'Dense', sans-serif;
+	font-weight: 200;
+	letter-spacing: .1rem;
+	width: fit-content;
+	transition: color 0.05s 0.05s;
 }
 
 .button__blue:hover {
@@ -182,24 +186,6 @@ transition: color 0.05s 0.05s;
 	margin-right: -3rem;
 	z-index: 5;
 }
-
-.yt {
-	position: relative;
-	display: block;
-	width: 50%; /* width of iframe wrapper */
-	height: 0;
-	margin: auto;
-	padding: 0% 0% 56.25%; /* 16:9 ratio */
-	overflow: hidden;
- }
-
- .yt iframe {
-	position: absolute;
-	top: 0; bottom: 0; left: 0;
-	width: 50%;
-	height: 50%;
-	border: 0;
- }
 
 footer {
 	height: 10rem;
