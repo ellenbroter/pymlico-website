@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (400px <= width <= 800px) {
 	h2 {
 		font-size: 30px;
 		letter-spacing: 0.1rem;
