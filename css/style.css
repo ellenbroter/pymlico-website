@@ -2,8 +2,12 @@
 	h2 {
 		font-size: 30px;
 		letter-spacing: 0.1rem;
-		margin-top: 2rem;
-		margin-bottom: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 0rem;
+	}
+	.header__icons {
+		margin-top: 1rem;
+		margin-bottom: 0;
 	}
 }
 
