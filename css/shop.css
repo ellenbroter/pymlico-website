@@ -9,6 +9,14 @@
 	}
 }
 
+.cart-flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: end;
+	position: sticky;
+	top: 2rem;
+}
+
 .cart {
 	position: relative;
 	background-color: white;

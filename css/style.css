@@ -9,10 +9,6 @@
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
-	iframe {
-		width: 280;
-		height: 157;
-	}
 }
 
 html {
@@ -224,12 +220,4 @@ footer {
 .album-cover-image {
 	height: 20rem;
 	width: 20rem;
-}
-
-.cart-flex {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: end;
-	position: sticky;
-	top: 2rem;
 }
