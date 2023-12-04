@@ -126,7 +126,7 @@ h3 {
 
 .header__icons {
 	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 	width: 100%;
 	display: flex;
 	justify-content: center;
