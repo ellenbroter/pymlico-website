@@ -6,22 +6,22 @@
 }
 
 .filter-button {
-background-color: rgba(255, 255, 255, 0.5);
-padding: 0.2rem;
-font-family: 'Dense';
-font-weight: 100;
-font-size: 22px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0.2rem;
+	font-family: 'Dense';
+	font-weight: 100;
+	font-size: 22px;
 }
 
 .list-items {
-line-height: 1.2rem;
-background-color: rgba(255, 255, 255, 0.5);
-height: fit-content;
-width: fit-content;
-display: flex;
-flex-flow: column nowrap;
-padding: 1.5rem;
-font-weight: 100;
+	line-height: 1.2rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 1.5rem;
+	font-weight: 100;
 }
 
 @media screen and (max-width: 1023px) {
