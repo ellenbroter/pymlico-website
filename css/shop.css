@@ -53,7 +53,7 @@
 
 @media (max-width: 500px) {
 	.shop {
-		grid-template-columns: repeat(1, 223px);
+		grid-template-columns: repeat(2, 223px);
 	}
 }
 
