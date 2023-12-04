@@ -9,6 +9,10 @@
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
+	iframe {
+		width: 280px;
+		height: 157px;
+	}
 }
 
 html {
@@ -194,11 +198,6 @@ transition: color 0.05s 0.05s;
 .right {
 	margin-right: -3rem;
 	z-index: 5;
-}
-
-iframe {
-	width: 560px;
-	height: 315px;
 }
 
 footer {
