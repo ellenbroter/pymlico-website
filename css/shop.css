@@ -49,6 +49,10 @@
 	.shop {
 		grid-template-columns: repeat(2, 123px);
 	}
+
+	.shop-images {
+		width: 119px;
+	}
 }
 
 
