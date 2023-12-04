@@ -23,3 +23,9 @@ flex-flow: column nowrap;
 padding: 1.5rem;
 font-weight: 100;
 }
+
+@media screen and (max-width: 1023px) {
+	.list-items {
+		font-size: 12px;
+	}
+}
