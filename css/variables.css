@@ -1,13 +1,19 @@
 :root {
 	--font-size-base: 16px;
+	--font-size-small: ;
+	--font-size-medium: ;
+	--font-size-large: ;
 
 	--color-primary: black;
 	--color-secondary: white;
-	--color-tertiary: hsl(0, 0%, 65%);
+	
+	--color-variation-1: #0F4972;
+	--color-variation-2: #4C8AB7;
+	--color-variation-3: rgba(255, 255, 255, 0.5);
 
-	--color-accent-1: hsl(235, 100%, 90%);
-
-	--spacing-small: 0.5rem;
-	--spacing-medium: 1rem;
+	--spacing-xsmall: 0.1rem;
+	--spacing-small: 1rem;
+	--spacing-medium: 1.5rem;
 	--spacing-large: 2rem;
+	--spacing-xlarge: 5rem;
 }

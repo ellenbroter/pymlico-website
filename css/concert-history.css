@@ -1,12 +1,12 @@
 .filter__buttons {
 	display: flex;
 	justify-content: center;
-	gap: 1rem;
+	gap: var(--spacing-small);
 	margin-bottom: 0.5rem;
 }
 
 .filter--button {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--color-variation-3);
 	padding: 0.2rem;
 	font-family: 'Dense';
 	font-weight: 100;
@@ -15,7 +15,7 @@
 
 .filter__list-items {
 	line-height: 1.5rem;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--color-variation-3);
 	height: fit-content;
 	width: fit-content;
 	display: flex;
