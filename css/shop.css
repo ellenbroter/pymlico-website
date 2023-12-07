@@ -3,7 +3,7 @@
 	flex-flow: row nowrap;
 	justify-content: end;
 	position: sticky;
-	top: 2rem;
+	top: var(--spacing-large);
 }
 
 .shopping__cart {
@@ -22,7 +22,7 @@
 	position: absolute;
 	top: -15px;
 	right: -10px;
-	font-size: 16px;
+	font-size: var(--font-size-base);
 	background-color: var(--color-variation-1);
 	color: var(--color-secondary);
 	padding: 3px;
@@ -39,7 +39,7 @@
 .shop__title {
 	font-family: 'Dense', sans-serif;
 	font-weight: 200;
-	font-size: 36px;
+	font-size: var(--font-size-large);
 	letter-spacing: 0.1rem;
 	margin-top: var(--spacing-xlarge);
 	margin-bottom: 0;
