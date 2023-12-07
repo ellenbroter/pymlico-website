@@ -25,6 +25,16 @@ Check out the live website: [Pymlico Band Website](https://pymlico-website.netli
 - JavaScript
 - Netlify (for hosting)
 
+## Credits
+
+- Photography: Lifetime Photographie - Guillaume BRET
+- Photography: Anne-Marie Forker
+- Cover photo by Patrick Janson
+- Bandphoto by Vilde Badendyck
+- Cover design by Colour Basement
+- Cover design by Your Brand Vision
+- [Shopping Cart Tutorial from Joy Shaheb](https://www.youtube.com/watch?v=cT_ZYrS3tKc)
+
 ## Feedback
 
 If you have any feedback, suggestions, or questions about the website or the repository, feel free to open an issue or reach out to us.
